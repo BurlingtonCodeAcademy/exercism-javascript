@@ -31,5 +31,8 @@
     "rules": {
       "func-names": "off"
     }
+  },
+  "dependencies": {
+    "marked": "^0.3.19"
   }
 }
