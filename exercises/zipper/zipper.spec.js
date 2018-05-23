@@ -31,47 +31,47 @@ describe('Zipper', function () {
     expect(zipper.toTree(t1)).toEqual(t1);
   });
 
-  xit('left, right and value', function () {
+  it('left, right and value', function () {
     expect(zipper.left().right().value()).toEqual(3);
   });
 
-  xit('dead end', function () {
+  it('dead end', function () {
     expect(zipper.left().left()).toBe(null);
   });
 
-  xit('tree from deep focus', function () {
+  it('tree from deep focus', function () {
     expect(zipper.left().right().toTree()).toEqual(t1);
   });
 
-  xit('traversing up from top', function () {
+  it('traversing up from top', function () {
     expect(zipper.up()).toEqual(null);
   });
 
-  xit('left, right and up', function () {
+  it('left, right and up', function () {
     expect(zipper.left().up().right().up().left().right().value()).toEqual(3);
   });
 
-  xit('setValue', function () {
+  it('setValue', function () {
     expect(zipper.left().setValue(5).toTree()).toEqual(t2);
   });
 
-  xit('setValue after traversing up', function () {
+  it('setValue after traversing up', function () {
     expect(zipper.left().right().up().setValue(5).toTree()).toEqual(t2);
   });
 
-  xit('setLeft with leaf', function () {
+  it('setLeft with leaf', function () {
     expect(zipper.left().setLeft(leaf(5)).toTree()).toEqual(t3);
   });
 
-  xit('setRight with null', function () {
+  it('setRight with null', function () {
     expect(zipper.left().setRight(null).toTree()).toEqual(t4);
   });
 
-  xit('setRight with subtree', function () {
+  it('setRight with subtree', function () {
     expect(zipper.setRight(bt(6, leaf(7), leaf(8))).toTree()).toEqual(t5);
   });
 
-  xit('setValue on deep focus', function () {
+  it('setValue on deep focus', function () {
     expect(zipper.left().right().setValue(5).toTree()).toEqual(t6);
   });
 });

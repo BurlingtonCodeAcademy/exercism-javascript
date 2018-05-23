@@ -11,17 +11,17 @@ describe('Solve the alphametics puzzle', function () {
     expect(solve(puzzle)).toEqual(expected);
   });
 
-  xit('solution must have unique value for each letter', function () {
+  it('solution must have unique value for each letter', function () {
     var puzzle = 'A == B';
     expect(solve(puzzle)).toBeNull();
   });
 
-  xit('leading zero solution is invalid', function () {
+  it('leading zero solution is invalid', function () {
     var puzzle = 'ACA + DD == BD';
     expect(solve(puzzle)).toBeNull();
   });
 
-  xit('puzzle with four letters', function () {
+  it('puzzle with four letters', function () {
     var puzzle = 'AS + A == MOM';
     var expected =  {
       'A': 9,
@@ -32,7 +32,7 @@ describe('Solve the alphametics puzzle', function () {
     expect(solve(puzzle)).toEqual(expected);
   });
 
-  xit('puzzle with six letters', function () {
+  it('puzzle with six letters', function () {
     var puzzle = 'NO + NO + TOO == LATE';
     var expected =  {
       'N': 7,
@@ -45,7 +45,7 @@ describe('Solve the alphametics puzzle', function () {
     expect(solve(puzzle)).toEqual(expected);
   });
 
-  xit('puzzle with seven letters', function () {
+  it('puzzle with seven letters', function () {
     var puzzle = 'HE + SEES + THE == LIGHT';
     var expected =  {
       'E': 4,
@@ -59,7 +59,7 @@ describe('Solve the alphametics puzzle', function () {
     expect(solve(puzzle)).toEqual(expected);
   });
 
-  xit('puzzle with eight letters', function () {
+  it('puzzle with eight letters', function () {
     var puzzle = 'SEND + MORE == MONEY';
     var expected =  {
       'S': 9,
@@ -74,7 +74,7 @@ describe('Solve the alphametics puzzle', function () {
     expect(solve(puzzle)).toEqual(expected);
   });
 
-  xit('puzzle with ten letters', function () {
+  it('puzzle with ten letters', function () {
     var puzzle = 'AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE';
     var expected =   {
       'A': 5,

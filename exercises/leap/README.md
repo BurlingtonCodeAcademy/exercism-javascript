@@ -26,35 +26,6 @@ phenomenon, go watch [this youtube video][video].
 
 [video]: http://www.youtube.com/watch?v=xX96xng7sAE
 
-## Setup
-
-Go through the setup instructions for JavaScript to install the
- necessary dependencies:
-
-http://exercism.io/languages/javascript/installation
-
-## Running the test suite
-
-The provided test suite uses [Jasmine](https://jasmine.github.io/).
-You can install it by opening a terminal window and running the
-following command:
-
-```sh
-npm install -g jasmine
-```
-
-Run the test suite from the exercise directory with:
-
-```sh
-jasmine leap.spec.js
-```
-
-In many test suites all but the first test have been marked "pending".
-Once you get a test passing, activate the next one by changing `xit` to `it`.
-
 ## Source
 
 JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.

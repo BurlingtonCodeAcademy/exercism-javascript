@@ -22,32 +22,6 @@ The case where the sum of the lengths of two sides _equals_ that of the
 third is known as a _degenerate_ triangle - it has zero area and looks like
 a single line. Feel free to add your own code/tests to check for degenerate triangles.
 
-## Setup
-
-Go through the setup instructions for JavaScript to install the
- necessary dependencies:
-
-http://exercism.io/languages/javascript/installation
-
-## Running the test suite
-
-The provided test suite uses [Jasmine](https://jasmine.github.io/).
-You can install it by opening a terminal window and running the
-following command:
-
-```sh
-npm install -g jasmine
-```
-
-Run the test suite from the exercise directory with:
-
-```sh
-jasmine triangle.spec.js
-```
-
-In many test suites all but the first test have been marked "pending".
-Once you get a test passing, activate the next one by changing `xit` to `it`.
-
 ## Source
 
 The Ruby Koans triangle project, parts 1 & 2 [http://rubykoans.com](http://rubykoans.com)

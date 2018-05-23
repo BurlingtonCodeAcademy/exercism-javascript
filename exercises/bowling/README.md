@@ -60,32 +60,6 @@ support two operations:
 * `score() : int` is called only at the very end of the game.  It
   returns the total score for that game.
 
-## Setup
-
-Go through the setup instructions for JavaScript to install the
- necessary dependencies:
-
-http://exercism.io/languages/javascript/installation
-
-## Running the test suite
-
-The provided test suite uses [Jasmine](https://jasmine.github.io/).
-You can install it by opening a terminal window and running the
-following command:
-
-```sh
-npm install -g jasmine
-```
-
-Run the test suite from the exercise directory with:
-
-```sh
-jasmine bowling.spec.js
-```
-
-In many test suites all but the first test have been marked "pending".
-Once you get a test passing, activate the next one by changing `xit` to `it`.
-
 ## Source
 
 The Bowling Game Kata at but UncleBob [http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata)

@@ -86,7 +86,7 @@ var TEST_BODY_TEMPLATES = {
 };
 
 var NON_CANONICAL_TESTS = `
-  xit('can be emptied', function() {
+  it('can be emptied', function() {
     var actual = new CustomSet([1, 2]).clear();
     var expected = new CustomSet();
     expect(actual.eql(expected)).toBe(true);
@@ -95,7 +95,7 @@ var NON_CANONICAL_TESTS = `
     expect(actual2.eql(expected2)).toBe(true);
   });
 
-  xit('knows its size', function() {
+  it('knows its size', function() {
     var actual = new CustomSet().size();
     expect(actual).toBe(0);
     var actual2 = new CustomSet([1, 2, 3]).size();
@@ -104,7 +104,7 @@ var NON_CANONICAL_TESTS = `
     expect(actual3).toBe(3);
   });
 
-  xit('can give back a list', function() {
+  it('can give back a list', function() {
     var actual = new CustomSet().toList();
     var expected = [];
     expect(actual.sort()).toEqual(expected);
@@ -173,7 +173,7 @@ ${tests}
 function testTemplate(isEnabled, description, body) {
   return (
     `
-  ${isEnabled ? 'it' : 'xit'}('${description}', function() {
+  ${isEnabled ? 'it' : 'it'}('${description}', function() {
     ${body}
   });
 `);

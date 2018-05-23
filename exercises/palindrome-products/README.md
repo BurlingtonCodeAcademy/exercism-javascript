@@ -32,31 +32,6 @@ Given the range `[10, 99]` (both inclusive)...
 The smallest palindrome product is `121`. Its factors are `(11, 11)`.
 The largest palindrome product is `9009`. Its factors are `(91, 99)`.
 
-## Setup
-
-Go through the setup instructions for JavaScript to install the
- necessary dependencies:
-
-http://exercism.io/languages/javascript/installation
-
-## Running the test suite
-
-The provided test suite uses [Jasmine](https://jasmine.github.io/).
-You can install it by opening a terminal window and running the
-following command:
-
-```sh
-npm install -g jasmine
-```
-
-Run the test suite from the exercise directory with:
-
-```sh
-jasmine palindrome-products.spec.js
-```
-
-In many test suites all but the first test have been marked "pending".
-Once you get a test passing, activate the next one by changing `xit` to `it`.
 
 ## Source
 

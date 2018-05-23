@@ -1,16 +1,25 @@
-With the first few exercises, you will get a skeleton file with the exported modules.
-For later ones, you can find more information about modules in the [node documentation](http://nodejs.org/api/modules.html#modules_module_exports).
+# Tests
 
 For running tests, install `jasmine` as described in the [Installing Javascript section](http://exercism.io/languages/javascript/installation).
 Move to the folder where that exercise's files are located (a path similar to {EXERCISM_HOME_DIR}/javascript/{EXERCISE}).
 
     cd ~/exercism/javascript/bob
-    jasmine bob_test.spec.js
+    jasmine --fail-fast=true bob_test.spec.js
 
-Only the first test will be executed, all the others have been marked pending using `xit` or `xdescribe`.
-As you keep solving the exercise, one by one change all `xit` and `xdescribe` to `it` and `describe` respectively to run all the tests.
-See [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) to know more about this approach.
+At first, only the first test will be executed. 
+
+(The "fail fast" option causes Jasmine to abort after the first failing test. Rather than cluttering the console
+with a dozen failure messages, it only shows you one failure, so you know where to focus your efforts.)
+
+After you get a test to pass, try [refactoring](https://en.wikipedia.org/wiki/Refactoring) for a bit before starting on the next test.
+
+Then keep running the test suite and writing code until all the tests pass.
+
 When all tests pass, you are ready to submit!
+
+See [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) to know more about this approach.
+
+
 
 
 ## Visual Studio on Windows
