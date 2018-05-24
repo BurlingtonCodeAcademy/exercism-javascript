@@ -19,6 +19,7 @@ Usage:
 Todo:
 * better / prettier styling
 */
+"use strict";
 
 var fs = require('fs');
 var marked = require("marked");
