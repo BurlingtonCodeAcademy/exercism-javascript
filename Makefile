@@ -1,3 +1,4 @@
+
 # assignments
 ASSIGNMENT ?= ""
 IGNOREDIRS := "^(\.git|docs|bin|node_modules|.idea)$$"
@@ -9,16 +10,22 @@ OUTDIR := $(shell mktemp -d "$(TMPDIR)/$(ASSIGNMENT).XXXXXXXXXX")
 
 # language specific config (tweakable per language)
 FILEEXT := "js"
-EXAMPLE := "example.$(FILEEXT)"
+ANSWER := "$(ASSIGNMENT).$(FILEEXT)"
+SPOILER := "$(ASSIGNMENT).rot13.$(FILEEXT)"
 TSTFILE := "$(subst _,-,$(ASSIGNMENT)).spec.$(FILEEXT)"
 
 test-assignment:
 	@echo "running tests for: $(ASSIGNMENT)"
 	@cp big-integer.$(FILEEXT) $(OUTDIR)
 	@cp exercises/$(ASSIGNMENT)/$(TSTFILE) $(OUTDIR)
-	@cp exercises/$(ASSIGNMENT)/$(EXAMPLE) $(OUTDIR)/$(subst _,-,$(ASSIGNMENT)).$(FILEEXT)
-	#@sed -i.original 's/\bxit\b/it/g' $(OUTDIR)/*spec.$(FILEEXT)
-	@sed 's/xit/it/g' exercises/$(ASSIGNMENT)/$(TSTFILE) > $(OUTDIR)/$(TSTFILE)
+
+	# if a plaintext solution exists, rot13 it
+	# see https://stackoverflow.com/questions/5553352/how-do-i-check-if-file-exists-in-makefile
+	if test -f exercises/$(ASSIGNMENT)/$(ANSWER); then tr 'A-Za-z' 'N-ZA-Mn-za-m' < exercises/$(ASSIGNMENT)/$(ASSIGNMENT).js > exercises/$(ASSIGNMENT)/$(SPOILER); fi
+
+	# de-rot13 the solution before running it
+	@tr 'A-Za-z' 'N-ZA-Mn-za-m' < exercises/$(ASSIGNMENT)/$(SPOILER) > $(OUTDIR)/$(ASSIGNMENT).$(FILEEXT)
+
 	@jasmine --random=true $(OUTDIR)/$(TSTFILE)
 
 test:
