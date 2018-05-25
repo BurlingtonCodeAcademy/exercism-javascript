@@ -8,9 +8,12 @@ To run the tests, you'll need NodeJS and Jasmine. For information about how to i
 
 Inside the project dir, run `npm install` to get `marked`, then run `node .` to start the local server.
 
-## Usage
+## Usage - for students
 
-* To view the available exercises, run `node .` from the project root directory and visit <http://localhost:5000>
+* `git clone` this repo and `cd exercism-javascript` to enter it
+* To view the available exercises and general instructions, run `node .` from the project root directory and visit <http://localhost:5000>
+
+## Usage - for teachers
 
 * To create a solution to an exercise (e.g. `two-fer`), enter the `exercises/two-fer` directory and create `two-fer.js` and run `jasmine two-fer.spec.js` as usual.
 * Before checking in, 
