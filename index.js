@@ -87,7 +87,7 @@ http.createServer(function (request, response) {
         // todo: fun icon?
     } else {
         var markdown = fs.readFileSync("." + request.url);
-        html = marked(markdown.toString('utf8'));
+        var html = marked(markdown.toString('utf8'));
         html = style() + html;
         response.write(html);
     }
