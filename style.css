@@ -15,6 +15,7 @@ pre {
     font-size: 120%; 
     background-color: #ffefcf;
     padding: 4px;
+    margin-left: 2em;
     border: 1px solid #ffe2d5;
     overflow-x: auto;
 }
