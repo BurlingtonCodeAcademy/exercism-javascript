@@ -22,7 +22,7 @@ Inside the project dir, run `npm install` to get `marked`, then run `node .` to 
   * do *not* commit the solution itself; in fact you may want to `rm two-fer.js` (or add `two-fer.js` to `.gitignore`) once you're done, to keep you from accidentally checking it in
 * if you want to decrypt or encrypt spoilers on your own, use this alias:
   * `alias rot13='tr A-Za-z N-ZA-Mn-za-m'`
-
+  * and use it like e.g. `rot13 < foo.rot13.js > foo.js`
 
 The following commands assume that you are in the `javascript` directory:
 

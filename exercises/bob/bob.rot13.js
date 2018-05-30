@@ -1,4 +1,4 @@
-shapgvba Obo() {
+zbqhyr.rkcbegf = shapgvba urlObo(vachg) {
   'hfr fgevpg';
 
   shapgvba vfFvyrapr(zrffntr) {
@@ -13,20 +13,16 @@ shapgvba Obo() {
     erghea zrffntr[zrffntr.yratgu - 1] === '?';
   }
 
-  guvf.url = shapgvba (vachg) {
-    ine zrffntr = vachg.gevz();
-    vs (vfFvyrapr(zrffntr)) {
-      erghea 'Svar. Or gung jnl!';
-    } ryfr vs (vfFubhgvat(zrffntr)) {
-      vs (vfNDhrfgvba(zrffntr)) {
-        erghea "Pnyz qbja, V xabj jung V'z qbvat!";
-      }
-      erghea 'Jubn, puvyy bhg!';
-    } ryfr vs (vfNDhrfgvba(zrffntr)) {
-      erghea 'Fher.';
+  ine zrffntr = vachg.gevz();
+  vs (vfFvyrapr(zrffntr)) {
+    erghea 'Svar. Or gung jnl!';
+  } ryfr vs (vfFubhgvat(zrffntr)) {
+    vs (vfNDhrfgvba(zrffntr)) {
+      erghea "Pnyz qbja, V xabj jung V'z qbvat!";
     }
-    erghea 'Jungrire.';
-  };
-}
-
-zbqhyr.rkcbegf = Obo;
+    erghea 'Jubn, puvyy bhg!';
+  } ryfr vs (vfNDhrfgvba(zrffntr)) {
+    erghea 'Fher.';
+  }
+  erghea 'Jungrire.';
+};
