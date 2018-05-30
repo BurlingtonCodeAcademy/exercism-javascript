@@ -13,5 +13,3 @@ insensitive. Input will not contain non-ASCII symbols.
 
 Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.

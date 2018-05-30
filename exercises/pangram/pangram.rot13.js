@@ -11,11 +11,7 @@ ine Cnatenz = shapgvba (pnaqvqngr) {
     havdhr[ry] = gehr;
   });
 
-  erghea {
-    vfCnatenz: shapgvba () {
-      erghea Bowrpg.xrlf(havdhr).yratgu === NYCUN_YRATGU;
-    }
-  };
+  erghea Bowrpg.xrlf(havdhr).yratgu === NYCUN_YRATGU;
 };
 
 zbqhyr.rkcbegf = Cnatenz;

@@ -15,9 +15,6 @@ Usage:
     start http://localhost:5000    # windows
     open http://localhost:5000     # mac
     // to see the list of all exercises
-
-Todo:
-* better / prettier styling
 */
 "use strict";
 

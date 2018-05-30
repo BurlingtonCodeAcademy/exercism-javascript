@@ -20,6 +20,9 @@ Inside the project dir, run `npm install` to get `marked`, then run `node .` to 
   * run `make test` - that will create a *rot13* version of your solution and then copy it to a temp directory and verify the tests pass
   * `git add two-fer.rot13.js` so the obscured solution gets saved
   * do *not* commit the solution itself; in fact you may want to `rm two-fer.js` (or add `two-fer.js` to `.gitignore`) once you're done, to keep you from accidentally checking it in
+* if you want to decrypt or encrypt spoilers on your own, use this alias:
+  * `alias rot13='tr A-Za-z N-ZA-Mn-za-m'`
+
 
 The following commands assume that you are in the `javascript` directory:
 
