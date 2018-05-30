@@ -4,7 +4,7 @@ Exercism exercises in JavaScript
 
 ## Installing
 
-To run the tests, you'll need NodeJS and Jasmine. For information about how to install these tools, see the [Javascript](http://exercism.io/languages/javascript/about) page. 
+To run the tests, you'll need NodeJS and Jasmine. For information about how to install these tools, see the [Javascript](http://exercism.io/languages/javascript/about) page.
 
 Inside the project dir, run `npm install` to get `marked`, then run `node .` to start the local server.
 
