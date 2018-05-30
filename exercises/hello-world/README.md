@@ -33,6 +33,8 @@ You don't need to be able to write a test suite from scratch,
 but it helps to understand what a test looks like, and what
 it is doing.
 
+### Step 1
+
 In your text editor, open the test file, `hello-world.spec.js`.
 There is one test inside:
 
@@ -46,6 +48,8 @@ Run the test now, with the following command on the command-line:
 
 The test fails, which makes sense since you've not written any code yet.
 
+### Step 2
+
 The error message should contain this line:
 
     Error: Cannot find module './hello-world'
@@ -53,6 +57,8 @@ The error message should contain this line:
 To fix this error, you need to create a *file* called `hello-world.js` in the current directory. Use your text editor to create an empty file now, and re-run the tests:
 
     jasmine hello-world.spec.js
+
+### Step 3
 
 Now we have a new error message. That's progress! :-)
 
@@ -66,6 +72,8 @@ To fix this error, go back to `hello-world.js` and type this code:
 Remember to save the file, then run the tests again:
 
     jasmine hello-world.spec.js
+
+### Step 4
 
 Now we have yet another new error message. That's good too! We are getting closer.
 
@@ -122,6 +130,8 @@ Then run the tests again from the command-line:
 
 Notice how it changes the failure message.
 
+### Step 5
+
 Finally, change the implementation in `hello-world.js` again, this time to make the test pass. Your goal is to see the following output on the terminal:
 
     Started
@@ -129,7 +139,11 @@ Finally, change the implementation in `hello-world.js` again, this time to make 
 
     1 spec, 0 failures
 
-When you see this, you are done! Give yourself a high five! Then submit your solution to exercism.io:
+When you see this, you are done! Give yourself a high five! 
+
+### Step 6
+
+Then submit your solution to exercism.io:
 
     exercism submit hello-world.js
 
