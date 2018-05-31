@@ -8,3 +8,11 @@ bin/configlet.exe
 .idea
 
 *.js~
+.vscode
+
+
+exercises/bob/bob.js
+exercises/leap/leap.js
+exercises/pangram/pangram.js
+exercises/rna-transcription/rna-transcription.js
+exercises/simple-cipher/simple-cipher.js

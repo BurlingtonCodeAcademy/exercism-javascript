@@ -35,6 +35,25 @@ When "ldpdsdqgdehdu" is put into the decode function it would return
 the original "iamapandabear" letting your friend read your original
 message.
 
+#### Design
+
+Your solution must be in the form of a JavaScript object. Use the following template for your source code:
+
+    var Cipher = function(key) {
+        this.key = key;
+    }
+
+    Cipher.prototype.encode = function(plaintext) {
+
+    }
+
+    Cipher.prototype.decode = function(ciphertext) {
+
+    }
+
+    module.exports = Cipher;
+
+
 ## Step 2
 
 Shift ciphers are no fun though when your kid sister figures it out. Try
@@ -81,10 +100,6 @@ on Wikipedia][dh] for one of the first implementations of this scheme.
 [1]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png
 [dh]: http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
-
 ## Source
 
 Substitution Cipher at Wikipedia [http://en.wikipedia.org/wiki/Substitution_cipher](http://en.wikipedia.org/wiki/Substitution_cipher)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.

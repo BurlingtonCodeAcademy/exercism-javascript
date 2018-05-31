@@ -1,36 +1,35 @@
-var DnaTranscriber = require('./rna-transcription');
-var dnaTranscriber = new DnaTranscriber();
+var transcribeDna = require('./rna-transcription');
 
 describe('toRna()', function () {
   it('transcribes cytosine to guanine', function () {
-    expect(dnaTranscriber.toRna('C')).toEqual('G');
+    expect(transcribeDna('C')).toEqual('G');
   });
 
   it('transcribes guanine to cytosine', function () {
-    expect(dnaTranscriber.toRna('G')).toEqual('C');
+    expect(transcribeDna('G')).toEqual('C');
   });
 
   it('transcribes adenine to uracil', function () {
-    expect(dnaTranscriber.toRna('A')).toEqual('U');
+    expect(transcribeDna('A')).toEqual('U');
   });
 
   it('transcribes thymine to adenine', function () {
-    expect(dnaTranscriber.toRna('T')).toEqual('A');
+    expect(transcribeDna('T')).toEqual('A');
   });
 
   it('transcribes all dna nucleotides to their rna complements', function () {
-    expect(dnaTranscriber.toRna('ACGTGGTCTTAA'))
+    expect(transcribeDna('ACGTGGTCTTAA'))
       .toEqual('UGCACCAGAAUU');
   });
 
   it('correctly handles completely invalid input', function () {
-    expect(function () { dnaTranscriber.toRna('XXX'); }).toThrow(
+    expect(function () { transcribeDna('XXX'); }).toThrow(
       new Error('Invalid input')
     );
   });
 
   it('correctly handles partially invalid input', function () {
-    expect(function () { dnaTranscriber.toRna('ACGTXXXCTTAA'); }).toThrow(
+    expect(function () { transcribeDna('ACGTXXXCTTAA'); }).toThrow(
       new Error('Invalid input')
     );
   });

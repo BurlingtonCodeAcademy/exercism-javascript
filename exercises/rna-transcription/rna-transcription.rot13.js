@@ -1,7 +1,5 @@
 'hfr fgevpg';
 
-ine QanGenafpevore = shapgvba () {};
-
 ine qanGbEan = {
   T: 'P',
   P: 'T',
@@ -9,15 +7,11 @@ ine qanGbEan = {
   N: 'H'
 };
 
-ine genafpevorQan = shapgvba (qan, ybbxhcGnoyr) {
+ine genafpevorQan = shapgvba (qan) {
   erghea qan.ercynpr(/./t, shapgvba (qanAhpyrbgvqr) {
-    vs (!(qanAhpyrbgvqr va ybbxhcGnoyr)) { guebj Reebe('Vainyvq vachg'); }
-    erghea ybbxhcGnoyr[qanAhpyrbgvqr];
+    vs (!(qanAhpyrbgvqr va qanGbEan)) { guebj Reebe('Vainyvq vachg'); }
+    erghea qanGbEan[qanAhpyrbgvqr];
   });
 };
 
-QanGenafpevore.cebgbglcr.gbEan = shapgvba (qan) {
-  erghea genafpevorQan(qan, qanGbEan);
-};
-
-zbqhyr.rkcbegf = QanGenafpevore;
+zbqhyr.rkcbegf = genafpevorQan;
