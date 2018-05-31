@@ -6,7 +6,7 @@ exercises in order.
 For each exercise, if you click on its name, it shows that
 exercise's README, rendered into HTML.
 
-Usage:
+Usage: (assuming 'alexch' is your origin repo)
     git clone https://github.com/alexch/javascript
     cd javascript
     npm install
@@ -41,7 +41,7 @@ function indexHtml() {
 
     html += "<h2>Setup</h2>"
     html += "<ol>"
-    html += "<li><code>git clone https://github.com/alexch/exercism-javascript</code> (this repo)"
+    html += "<li><code>git clone https://github.com/alexch/exercism-javascript</code> (or whatver this repo's git URL is)"
     html += "<li>Install NodeJS using <a href='http://exercism.io/languages/javascript/installation'>these instructions</a> (if you need it)"
     html += "<li>Install Jasmine using <code>npm install -g jasmine</code>"
     html += "<li><code>cd exercism-javascript</code> "
@@ -54,7 +54,7 @@ function indexHtml() {
     html += "<li>Pick an exercise from the list below -- <b>start with hello-world</b>!"
     html += "<li>Click its name to see its README in this browser"
     html += "<li>Change into its directory, e.g. <code>cd exercises/hello-world</code>"
-    html += "<li>Run its tests using <code>jasmine *.spec.js</code> and code until they all pass"
+    html += "<li>Run its tests using <code>jasmine --fail-fast=true --random=false *.spec.js</code> and code until they all pass"
     html += "</ol>"
 
     html += "<h2>Exercises</h2>";
