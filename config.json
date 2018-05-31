@@ -59,7 +59,7 @@
     },
     {
       "core": true,
-      "difficulty": 1,
+      "difficulty": 3,
       "slug": "simple-cipher",
       "topics": [
         "algorithms",
@@ -69,7 +69,9 @@
         "randomness",
         "strings",
         "text-formatting",
-        "transforming"
+        "transforming",
+        "exception-handling",
+        "classes"
       ],
       "uuid": "fff57c49-cde9-4a0c-b70b-2903cef212af"
     },
