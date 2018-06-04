@@ -40,9 +40,9 @@ function indexHtml() {
   html += '<h2>Setup</h2>';
   html += '<ol>';
   html += "<li><code>git clone https://github.com/alexch/exercism-javascript</code> (or whatver this repo's git URL is)";
-  html += "<li>Install NodeJS using <a href='http://exercism.io/languages/javascript/installation'>these instructions</a> (if you need it)";
-  html += '<li>Install Jasmine using <code>npm install -g jasmine</code>';
   html += '<li><code>cd exercism-javascript</code>';
+  html += "<li>Install NodeJS using <a href='http://exercism.io/languages/javascript/installation'>these instructions</a> (if you need it)";
+  html += '<li>Install node packages using <code>npm install</code>';
   html += '<li>run <code>node .</code> to run this very small web app on your local machine';
   html += '<li>visit <code>http://localhost:5000</code> to see these instructions and this list';
   html += '</ol>';
@@ -52,7 +52,12 @@ function indexHtml() {
   html += '<li>Pick an exercise from the list below -- <b>start with hello-world</b>!';
   html += '<li>Click its name to see its README in this browser';
   html += '<li>Change into its directory, e.g. <code>cd exercises/hello-world</code>';
-  html += '<li>Run its tests using <code>jasmine --fail-fast=true --random=false *.spec.js</code> and code until they all pass';
+  html += '<li>Run its tests using <b>one</b> of the following: <ul>';
+  html += ' <li><code>npm test</code>'
+  html += ' <li><code>npx jasmine --fail-fast=true --random=false *.spec.js</code>'
+  html += ' <li><code>../../node_modules/.bin/jasmine --fail-fast=true --random=false *.spec.js</code>'
+  html += '</ul>'
+  html += '<li>...and code until all test pass!';
   html += '</ol>';
 
   html += '<h2>Exercises</h2>';

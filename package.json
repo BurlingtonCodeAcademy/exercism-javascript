@@ -18,7 +18,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "lint-fix": "eslint . --fix",
+    "test": "cd $INIT_CWD && npx jasmine --fail-fast=true --random=false *.spec.js"
   },
   "eslintConfig": {
     "plugins": [
