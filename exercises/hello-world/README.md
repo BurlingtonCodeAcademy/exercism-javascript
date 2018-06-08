@@ -141,28 +141,21 @@ Finally, change the implementation in `hello-world.js` again, this time to make 
 
 When you see this, you are done! Give yourself a high five! 
 
-### Step 6
-
-Then submit your solution to exercism.io:
-
-    exercism submit hello-world.js
-
 ## Running the test suite
 
 The provided test suite uses [Jasmine](https://jasmine.github.io/).
-You can install it by opening a terminal window and running the
-following command:
+
+Run the test suite from *inside the exercise directory* with:
 
 ```sh
-npm install -g jasmine
+npm test
 ```
 
-Run the test suite from the exercise directory with:
+If the above does not work, try the following:
 
 ```sh
-jasmine hello-world.spec.js
+npx jasmine --fail-fast=true --random=false hello-world.spec.js
 ```
-
 
 ## Source
 
