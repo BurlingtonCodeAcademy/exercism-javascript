@@ -1,6 +1,6 @@
 'hfr fgevpg';
 
-rkcbegf.sbe = shapgvba (a) {
+zbqhyr.rkcbegf = shapgvba(a) {
   ine cevzrSnpgbef = [];
   ine cbffvoyrSnpgbe = 2;
   ine ahzore = a;
